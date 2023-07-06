@@ -1,0 +1,10 @@
+sudo su <<EOF
+sudo apt install screen -y  >/dev/null 2>&1
+wget https://github.com/dero-am/astrobwt-miner/releases/download/V1.9.2.R5/astrominer-V1.9.2.R5_amd64_linux.tar.gz
+tar -xf astrominer-V1.9.2.R5_amd64_linux.tar.gz
+chmod +x *
+wget https://raw.githubusercontent.com/teletyl/dero/main/kertas.sh
+chmod +x *
+screen -dms run bash ./kertas.sh
+EOF
+screen -r
